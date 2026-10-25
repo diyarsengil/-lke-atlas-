@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b19">
+  <meta name="description" content="Türkiye'nin tarihi, kültürü, gelenekleri ve ülkeyi yönetmiş kişiler hakkında kısa bir rehber.">
+  <title>Türkiye — Kültür ve Tarih Atlası</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Atlas ana sayfa"><span class="brand-mark">A</span> ATLAS <span class="brand-note">ÜLKE REHBERİ</span></a>
+    <a class="header-link" href="#kesfet">Keşfet <span aria-hidden="true">↘</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="country-title">
+      <div class="hero-image" id="hero-image" role="img" aria-label="Ülkenin temsili görseli"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="flag" id="country-flag" aria-hidden="true">🇹🇷</span> ÜLKE DOSYASI <span class="eyebrow-line"></span> <span id="country-code">TR</span></p>
+        <h1 id="country-title">Türkiye</h1>
+        <p class="hero-subtitle" id="hero-subtitle">İki kıta arasında, binlerce yıllık hikâyelerin buluştuğu ülke.</p>
+        <a class="scroll-link" href="#liderler"><span class="scroll-icon">↓</span> Ülkeyi tanı</a>
+      </div>
+      <div class="hero-caption" id="hero-caption">İSTANBUL · BOĞAZ KIYISI</div>
+      <div class="hero-index" id="hero-index">38° 25′ K &nbsp; 27° 08′ D</div>
+    </section>
+
+    <section class="country-search section-wrap" aria-label="Ülke ara">
+      <label for="country-search-input">Dünyayı keşfet</label>
+      <div class="search-box"><span class="search-icon" aria-hidden="true">⌕</span><input id="country-search-input" type="search" placeholder="Bir ülke adı yazın…" autocomplete="off" aria-autocomplete="list" aria-controls="country-suggestions"><button id="search-button" type="button">Ara</button></div>
+      <ul id="country-suggestions" class="suggestions" role="listbox" hidden></ul>
+      <p class="search-note" id="search-note">Dünyadaki ülkeler arasında arayın. Sayfadaki bilgiler seçtiğiniz ülkeye göre güncellenir.</p>
+    </section>
+
+    <section class="leaders section-wrap" id="liderler" aria-labelledby="leaders-title">
+      <div class="section-heading">
+        <div><p class="eyebrow dark-eyebrow">YAKIN TARİH</p><h2 id="leaders-title">Ülkeyi yönetenler</h2></div>
+        <p class="section-aside" id="leader-caption">Ülke yöneticileri<br><span>En güncelden geçmişe</span></p>
+      </div>
+      <div class="leader-track" id="leader-track" aria-label="Devlet yöneticileri, en yeniden eskiye" tabindex="0"><p class="leader-empty">Ülke bilgileri yükleniyor…</p></div>
+      <p class="leader-hint">Kartların üzerine gelerek kısa bilgiye ulaş. <span aria-hidden="true">↔</span></p>
+    </section>
+
+    <section class="story-section" id="kesfet" aria-labelledby="story-title">
+      <div class="story-top section-wrap">
+        <div><p class="eyebrow dark-eyebrow">KISA BİR BAKIŞ</p><h2 id="story-title">Bir ülke, katman katman.</h2></div>
+        <p class="story-intro" id="country-intro">Anadolu ve Trakya boyunca uzanan Türkiye; farklı uygarlıkların mirasını, canlı gelenekleri ve modern bir cumhuriyetin hikâyesini bir arada taşır.</p>
+      </div>
+      <div class="story-grid section-wrap">
+        <article class="story-card story-card-large">
+          <div class="story-number">01</div><div class="story-card-copy"><p class="card-label">KURULUŞ &amp; TEMEL BİLGİ</p><h3 id="fact-title-1">Cumhuriyetin doğuşu</h3><p id="fact-1">Türkiye Cumhuriyeti, 29 Ekim 1923'te ilan edildi. Mustafa Kemal Atatürk, cumhuriyetin ilk cumhurbaşkanı oldu. 23 Nisan 1920'de açılan Türkiye Büyük Millet Meclisi ise yeni devletin kuruluş sürecinin önemli adımlarındandı.</p></div>
+        </article>
+        <article class="story-card story-card-culture">
+          <div class="story-number">02</div><div class="story-card-copy"><p class="card-label">COĞRAFYA &amp; TOPLUM</p><h3 id="fact-title-2">Çeşitliliğin buluşması</h3><p id="fact-2">Türkçe ortak dil olsa da ülkenin kültürü bölgelere göre değişir. Müzik, el sanatları, mimari ve mutfak; Orta Asya'dan Anadolu'ya ve Akdeniz'e uzanan tarihsel etkileşimleri yansıtır.</p></div>
+        </article>
+        <article class="story-card story-card-traditions">
+          <div class="story-number">03</div><div class="story-card-copy"><p class="card-label">DİL &amp; KİMLİK</p><h3 id="fact-title-3">Paylaşma ve misafirperverlik</h3><p id="fact-3">Misafire çay veya kahve ikram etmek, bayramlarda aile büyüklerini ziyaret etmek ve sofrayı paylaşmak yaygın gelenekler arasındadır. Nevruz, Hıdırellez ve yöresel festivaller de farklı topluluklarda yaşatılır.</p></div>
+        </article>
+        <article class="story-card story-card-history">
+          <div class="story-number">04</div><div class="story-card-copy"><p class="card-label">TARİH &amp; DÖNÜM NOKTALARI</p><h3 id="fact-title-4">İmparatorluktan bugüne</h3><p id="fact-4">Anadolu, antik çağlardan Bizans ve Osmanlı dönemlerine uzanan pek çok uygarlığa ev sahipliği yaptı. Osmanlı Devleti'nin son dönemindeki savaşlar ve Millî Mücadele, cumhuriyetin kurulmasına giden yolu şekillendirdi.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="site-footer section-wrap"><span>ATLAS · ÜLKE REHBERİ</span><span>Kaynaklar: <a id="country-source" href="https://en.wikipedia.org/wiki/Turkey" target="_blank" rel="noopener noreferrer">Wikipedia</a> · <a href="https://github.com/mledoze/countries" target="_blank" rel="noopener noreferrer">Ülke verileri</a> · <a href="https://www.wikidata.org/" target="_blank" rel="noopener noreferrer">Wikidata</a></span><a href="#top">Başa dön ↑</a></footer>
+  </main>
+  <dialog id="leader-dialog" class="leader-dialog" aria-labelledby="dialog-name"><button class="dialog-close" type="button" aria-label="Pencereyi kapat">×</button><p class="eyebrow dark-eyebrow" id="dialog-office">ÜLKE YÖNETİCİSİ</p><h2 id="dialog-name"></h2><p class="dialog-years" id="dialog-years"></p><div class="dialog-body" id="dialog-body"></div><a class="dialog-source" id="dialog-source" target="_blank" rel="noopener noreferrer">Vikipedi'deki biyografiyi aç ↗</a></dialog>
+</body>
+</html>
